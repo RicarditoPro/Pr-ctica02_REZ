@@ -14,5 +14,16 @@ namespace APP_02_SPLASH_REZ
         {
             InitializeComponent();
         }
+
+        private async void btnRegistro_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
+        }
+        private async void btnCuenta_Clicked(object sender, EventArgs e)
+        {
+           // await Navigation.PushAsync(new LoginPage());
+        }
+
+
     }
 }

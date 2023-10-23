@@ -13,7 +13,7 @@ using System.Text;
 
 namespace APP_02_SPLASH_REZ.Droid
 {
-    [Activity(Label = "APP_REZ", Theme = "@style/SplashTheme",
+    [Activity(Label = "APP_EZ", Theme = "@style/SplashTheme",
         MainLauncher = true,
         NoHistory = true, ConfigurationChanges = Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.Orientation
         )]

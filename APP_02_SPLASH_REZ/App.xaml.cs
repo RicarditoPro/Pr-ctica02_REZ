@@ -10,7 +10,7 @@ namespace APP_02_SPLASH_REZ
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

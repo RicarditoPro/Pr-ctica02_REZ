@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP_02_SPLASH_REZ.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowSpacing="22">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackLayout HorizontalOptions="Center" Grid.Row="1">
+                    <Label Text="Registrarse ahora" FontSize="18" WidthRequest="300" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center" Grid.Row="2">
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Start" FontSize="15" FontFamily="" Placeholder="Usuario"
+                       Keyboard="Text" MaxLength="20"/>
+                    </Frame>
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Start" FontSize="15" FontFamily="" Placeholder="Password"
+                       Keyboard="Text" MaxLength="20"/>
+                    </Frame>
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Start" FontSize="15" Placeholder="Email"
+                       Keyboard="Email" MaxLength="20"/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" Grid.Row="3" Orientation="Horizontal">
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Start" FontSize="15" FontFamily="" Placeholder="Ap. Paterno"
+                       Keyboard="Text" MaxLength="20"/>
+                    </Frame>
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Start" FontSize="15" FontFamily="" Placeholder="Ap. Materno"
+                       Keyboard="Text" MaxLength="20"/>
+                    </Frame>
+
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" Grid.Row="4" Orientation="Horizontal">
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Entry WidthRequest="275" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Start" FontSize="15" FontFamily="" Placeholder="Edad"
+                       Keyboard="Numeric" MaxLength="20"/>
+                    </Frame>
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                        <Picker Title="País" FontSize="15" WidthRequest="134">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Estado Unidos</x:String>
+                                    <x:String>Japón</x:String>
+                                    <x:String>Colombia</x:String>
+                                    <x:String>Venezuela</x:String>
+                                    <x:String>Mexico</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" Grid.Row="5" Grid.Column="0">
+                    <Frame HasShadow="True" Padding="0,4,0,4">
+                        <Button x:Name="btnAceptar" Text="Aceptar" HeightRequest="45" WidthRequest="190" FontAttributes="Bold"
+                        TextColor="White" BackgroundColor="#0E6DD9" FontSize="14" CornerRadius="30"
+                        Clicked="btnAceptar_Clicked"/>
+                    </Frame>
+                </StackLayout>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
